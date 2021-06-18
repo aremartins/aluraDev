@@ -16,7 +16,7 @@
   <p>Para utilizar o editor de código, primeiro escolha a linguagem em que irá digitar o código, você pode atribuir um título e uma descrição para seu projeto, e escolher a cor de fundo do editor. Depois clique no botão "Visualizar com o highlight" para o texto ficar com destaque próprio da linguagem escolhida. Agora é só salvar.</p>
   
   <h3>Deploy da aplicação</h3>
-  <a href:"https://alura-dev-alpha.vercel.app/index.html">AluraDev</a>
+  <p>https://alura-dev-alpha.vercel.app/index.html</p>
 
   <h3>Pré visualização</h3>
   <p>Versão atual</p>
