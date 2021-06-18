@@ -1,0 +1,61 @@
+:root {
+  --blue : #051D3B;
+  --white: #fff;
+  --grey-transparent: rgba(255, 255, 255, 0.16);
+  --ligth-blue:#6BD1FF;
+  --dark-grey: #141414;
+  --mac-red: #FF5F56;
+  --mac-yellow: #FFBD2E;
+  --mac-green: #27C93F;
+  --blue-transparent: #5081FB14;
+  --dark-blue: #1c2229;
+  --blue-300: #5081FB;
+  --blue-200: #7BA4FC;
+  --blue-100: #96B9FD;
+  --mac_green: #27C93F;
+  --mac_red: #FF5F56;
+  --mac_yellow: #FFBD2E;
+  --dark-grey: #141414;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+/* main {
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ margin: 0px 32px;
+} */
+
+::-webkit-input-placeholder {
+  color: var(--white);
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.64;
+}
+
+::-moz-placeholder {
+  color: var(--white);
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.64;
+}   
+
+
+

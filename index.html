@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/configurations/normalize.css">
+  <link rel="stylesheet" href="./assets/css/configurations/reset.css">
+  <link rel="stylesheet" href="./assets/css/configurations/base.css">
+  <link rel="stylesheet" href="./assets/css/configurations/dracula.css">
+  <link rel="stylesheet" href="./assets/css/components/style.css">
+  <link rel="stylesheet" href="./assets/css/components/header.css">
+  <link rel="stylesheet" href="assets/css/components/menu_mobile.css">
+  <link rel="stylesheet" href="./assets/css/components/menu-page.css">
+  <link rel="stylesheet" href="./assets/css/components/main.css">
+  <link rel="stylesheet" href="assets/css/components/configurations-code.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>Alura Dev</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo" src="assets/img/Logo.svg" alt="">
+    <input class="header__search" type="search">
+    <img class='header__lupa' src="assets/img/busca.png" alt="Pesquisa">
+    <div class="header__user">
+      <img src="assets/img/Photopng.png" alt="" class="header__user_avatar">
+      <p class="header__user__name">Harry</p>
+    </div>
+    <nav class="header__menu" id="nav">
+      <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburguer"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <div class="menu__editor">
+          <img class="menu__editor_img" src="assets/img/Rectangle 37.svg" alt="">
+          <img class="menu__editor_imgTag_mobile" src="assets/img/Vector.svg" alt="">
+          <a href="index.html" class="menu__editor_link">Editor de Código</a>
+        </div>
+        <div class="menu__comunity">
+          <img class="menu__comunity_img" src="assets/img/Rectangle 38.svg">
+          <img class="menu__comunity_imgMan" src="assets/img/Vector2.svg" alt="">
+          <a href="community.html" class="menu__comunity_link">Comunidade</a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <nav class="menu">
+      <h3 class="menu__title">Menu</h3>
+      <div class="menu__editor">
+        <img class="menu__editor_img" src="assets/img/Rectangle 37.svg" alt="">
+        <img class="menu__editor_imgTags" src="assets/img/Vector.svg" alt="">
+        <a href="index.html" class="menu__editor_link">Editor de Código</a>
+      </div>
+      <div class="menu__comunity">
+        <img class="menu__comunity_img" src="assets/img/Rectangle 38.svg">
+        <img class="menu__comunity_imgMan" src="assets/img/Vector2.svg" alt="">
+        <a href="community.html" class="menu__comunity_link">Comunidade</a>
+      </div>
+    </nav>
+
+    <main class="main__content">
+      <div class="main__content-color">
+        <div class="codigo-wrapper main__content-code data-id">
+          <div class="mac-icons">
+            <span class="mac"></span>
+            <span class="mac -green"></span>
+            <span class="mac -yellow"></span>
+          </div>
+
+          <code class="preview hljs" contenteditable="true" aria-label="editor">
+
+              </code>
+        </div>
+      </div>
+      <button class="main__button-highlight" id="btnHljs">Visualizar com o highlight</button>
+      <!--<button class="main__button-export">Exportar</button>-->
+    </main>
+
+    <section class="configurations">
+      <div class="configurations__project">
+        <label for="name" class="configurations__project_title">Seu projeto</label>
+        <input type="text" placeholder="Nome do seu projeto" class="configurations__project_name" id="name">
+        <input type="text" placeholder="Descrição do seu projeto" class="configurations__project_description" id="description">
+      </div>
+
+      <div class="configurations__project -personalize">
+        <label for="language" class="configurations__project_title">Personalização</label>
+        <select class="configuration__project-language" id="language">
+          <option value="JavaScript">JavaScript</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+        </select>
+        <input type="color" name="" id="colorInput" class="configuration__project-color" onchange="changeColor()">
+        <button class="configuration__project-save" id="salvar">Salvar projeto</button>
+      </div>
+    </section>
+  </div>
+  <script src="assets/js/colors.js"></script>
+  <script src="assets/js/menu_mobile.js"></script>
+  <script src="assets/js/botaoSalvar.js"></script>
+  <script src="assets/js/highlight.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+#btn-mobile {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+#hamburguer {
+  display: block;
+  width: 20px;
+  border-top: 2px solid;
+  color: #fff;
+}
+
+#hamburguer::after,
+#hamburguer::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+
+#nav.active #hamburguer {
+  border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before {
+  transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
+#menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 0;
+  background: #2d415b;
+  z-index: 1000;
+  visibility: hidden;
+  height: 0;
+  transition: 0.6s;
+  overflow-y: hidden;
+  border-bottom: 1px solid var(--white);
+  box-shadow: 1px 1px 1px var(--white);
+}
+
+#nav.active #menu {
+  height: 40%;
+  visibility: visible;
+  overflow-y: auto;
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+
+#menu-body {
+  display: none;
+}
+
+.cabecalho__login {
+  display: none;
+}
+.menu__nav {
+  display: none;
+}
+
+.menu__editor_imgTag_mobile {
+  position: absolute;
+  left: 11px;
+}

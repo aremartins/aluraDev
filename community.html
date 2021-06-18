@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/configurations/normalize.css">
+  <link rel="stylesheet" href="./assets/css/configurations/reset.css">
+  <link rel="stylesheet" href="./assets/css/configurations/base.css">
+  <link rel="stylesheet" href="./assets/css/configurations/dracula.css">
+  <link rel="stylesheet" href="./assets/css/components/header.css">
+  <link rel="stylesheet" href="assets/css/components/menu_mobile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="assets/css/components/comunity.css">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>Comunidade</title>
+</head>
+
+<body spellcheck="false">
+  <header class="header">
+    <img class="header__logo" src="assets/img/Logo.svg" alt="">
+    <input class="header__search" type="search">
+    <img class='header__lupa' src="assets/img/busca.png" alt="Pesquisa">
+    <div class="header__user">
+      <img src="assets/img/Photopng.png" alt="" class="header__user_avatar">
+      <p class="header__user__name">Harry</p>
+    </div>
+    <nav class="header__menu" id="nav">
+      <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburguer"></span>
+      </button>
+      <div id="menu" role="menu">
+        <div class="menu__editor">
+          <img class="menu__editor_img" src="assets/img/Rectangle 37.svg" alt="">
+          <img class="menu__editor_imgTag_mobile" src="assets/img/Vector.svg" alt="">
+          <a href="index.html" class="menu__editor_link">Editor de Código</a>
+        </div>
+        <div class="menu__comunity">
+          <img class="menu__comunity_img" src="assets/img/Rectangle 38.svg">
+          <img class="menu__comunity_imgMan" src="assets/img/Vector2.svg" alt="">
+          <a href="community.html" class="menu__comunity_link">Comunidade</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <nav class="menu">
+      <h3 class="menu__title">Menu</h3>
+      <div class="menu__editor">
+        <img class="menu__editor_img" src="assets/img/Rectangle 37.svg" alt="">
+        <img class="menu__editor_imgTags" src="assets/img/Vector.svg" alt="">
+        <a href="index.html" class="menu__editor_link">Editor de Código</a>
+      </div>
+      <div class="menu__comunity">
+        <img class="menu__comunity_img" src="assets/img/Rectangle 38.svg">
+        <img class="menu__comunity_imgMan" src="assets/img/Vector2.svg" alt="">
+        <a href="community.html" class="menu__comunity_link">Comunidade</a>
+      </div>
+    </nav>
+    <div class="container todos-projetos js-todos-projetos">
+
+    </div>
+  </main>
+  <script src="assets/js/menu_mobile.js"></script>
+  <script src="assets/js/highlight.js"></script>
+  <script src="assets/js/comunidade.js"></script>
+  <script src="assets/js/colors.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>
+    const todosOsCodigos = document.querySelectorAll('code')
+    todosOsCodigos.forEach(codigo => {
+      hljs.highlightBlock(codigo)
+    })
+  </script>
+
+
+</body>
+
+</html>
